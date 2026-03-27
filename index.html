@@ -138,6 +138,70 @@
 <td><code>0x00</code>: Operation mode, <code>0x01</code>: Install mode</td>
 </tr>
 </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Frame Fields</th>
+      <th>Offset</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Start Delimiter</td>
+      <td>0</td>
+      <td>0x7E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Length</td>
+      <td>MSB</td>
+      <td>1</td>
+      <td>0x00</td>
+      <td rowspan="2">Data length in bytes. The example indicates 3-byte data.</td>
+    </tr>
+    <tr>
+      <td>LSB</td>
+      <td>2</td>
+      <td>0x03</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Data</td>
+      <td>API Type ID</td>
+      <td>3</td>
+      <td>0x02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Result</td>
+      <td>4</td>
+      <td>0xA5</td>
+      <td>
+        Response to Set Coordinator Command: ACK/NACK<br>
+        * 0xA5 – ACK<br>
+        * 0x5A – NACK
+      </td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>5</td>
+      <td>0x00</td>
+      <td>
+        Status code for the response. In case of ACK, the code is 0x00.
+        Supported values include the following:<br>
+        * 0x00 – Success<br>
+        * 0xF1 – Wrong parameters (e.g., Network mode 0xFF)
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">Checksum</td>
+      <td>6</td>
+      <td>0x58</td>
+      <td></td>
+    </tr>
+  </tbody>
 </table></div>
             </div>
         </div>
@@ -220,5 +284,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-03-27 08:03:35.259260+00:00
+Build Date UTC : 2026-03-27 08:53:48.441565+00:00
 -->
