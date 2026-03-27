@@ -1,0 +1,11 @@
+###################################################################
+# git ignore files 
+# - specify any files not to be maintained within the repot
+###################################################################
+
+.venv/
+venv/
+__pycache__/
+site/
+*.pyc
+.DS_Store
