@@ -139,67 +139,67 @@
 </tr>
 </tbody>
 </table>
-<table>
+<table style="border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
-      <th colspan="2">Frame Fields</th>
-      <th>Offset</th>
-      <th>Example</th>
-      <th>Description</th>
+      <th colspan="2" style="border: 1px solid #999; padding: 8px; text-align: left;">Frame Fields</th>
+      <th style="border: 1px solid #999; padding: 8px; text-align: left;">Offset</th>
+      <th style="border: 1px solid #999; padding: 8px; text-align: left;">Example</th>
+      <th style="border: 1px solid #999; padding: 8px; text-align: left;">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td colspan="2">Start Delimiter</td>
-      <td>0</td>
-      <td>0x7E</td>
-      <td></td>
+      <td colspan="2" style="border: 1px solid #999; padding: 8px;">Start Delimiter</td>
+      <td style="border: 1px solid #999; padding: 8px;">0</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x7E</td>
+      <td style="border: 1px solid #999; padding: 8px;"></td>
     </tr>
     <tr>
-      <td rowspan="2">Length</td>
-      <td>MSB</td>
-      <td>1</td>
-      <td>0x00</td>
-      <td rowspan="2">Data length in bytes. The example indicates 3-byte data.</td>
+      <td rowspan="2" style="border: 1px solid #999; padding: 8px;">Length</td>
+      <td style="border: 1px solid #999; padding: 8px;">MSB</td>
+      <td style="border: 1px solid #999; padding: 8px;">1</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x00</td>
+      <td rowspan="2" style="border: 1px solid #999; padding: 8px;">Data length in bytes. The example indicates 3-byte data.</td>
     </tr>
     <tr>
-      <td>LSB</td>
-      <td>2</td>
-      <td>0x03</td>
+      <td style="border: 1px solid #999; padding: 8px;">LSB</td>
+      <td style="border: 1px solid #999; padding: 8px;">2</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x03</td>
     </tr>
     <tr>
-      <td rowspan="3">Data</td>
-      <td>API Type ID</td>
-      <td>3</td>
-      <td>0x02</td>
-      <td></td>
+      <td rowspan="3" style="border: 1px solid #999; padding: 8px;">Data</td>
+      <td style="border: 1px solid #999; padding: 8px;">API Type ID</td>
+      <td style="border: 1px solid #999; padding: 8px;">3</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x02</td>
+      <td style="border: 1px solid #999; padding: 8px;"></td>
     </tr>
     <tr>
-      <td>Result</td>
-      <td>4</td>
-      <td>0xA5</td>
-      <td>
+      <td style="border: 1px solid #999; padding: 8px;">Result</td>
+      <td style="border: 1px solid #999; padding: 8px;">4</td>
+      <td style="border: 1px solid #999; padding: 8px;">0xA5</td>
+      <td style="border: 1px solid #999; padding: 8px;">
         Response to Set Coordinator Command: ACK/NACK<br>
-        * 0xA5 – ACK<br>
-        * 0x5A – NACK
+        * 0xA5 - ACK<br>
+        * 0x5A - NACK
       </td>
     </tr>
     <tr>
-      <td>Code</td>
-      <td>5</td>
-      <td>0x00</td>
-      <td>
-        Status code for the response. In case of ACK, the code is 0x00.
+      <td style="border: 1px solid #999; padding: 8px;">Code</td>
+      <td style="border: 1px solid #999; padding: 8px;">5</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x00</td>
+      <td style="border: 1px solid #999; padding: 8px;">
+        Status code for the response. In case of ACK, the code is 0x00.<br>
         Supported values include the following:<br>
-        * 0x00 – Success<br>
-        * 0xF1 – Wrong parameters (e.g., Network mode 0xFF)
+        * 0x00 - Success<br>
+        * 0xF1 - Wrong parameters (e.g., Network mode 0xFF)
       </td>
     </tr>
     <tr>
-      <td colspan="2">Checksum</td>
-      <td>6</td>
-      <td>0x58</td>
-      <td></td>
+      <td colspan="2" style="border: 1px solid #999; padding: 8px;">Checksum</td>
+      <td style="border: 1px solid #999; padding: 8px;">6</td>
+      <td style="border: 1px solid #999; padding: 8px;">0x58</td>
+      <td style="border: 1px solid #999; padding: 8px;"></td>
     </tr>
   </tbody>
 </table></div>
@@ -284,5 +284,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-03-27 08:53:48.441565+00:00
+Build Date UTC : 2026-03-27 08:58:28.388068+00:00
 -->
